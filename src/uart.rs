@@ -25,8 +25,8 @@ pub trait Pin: super::IOMUX {
     const DAISY: Option<super::Daisy>;
     /// Pin direction
     type Direction: Direction;
-    /// UART module; `U3` for `UART3`
-    type Module: super::consts::Unsigned;
+    /// UART module; `3` for `UART3`
+    const MODULE: usize;
 }
 
 /// Prepare a UART pin

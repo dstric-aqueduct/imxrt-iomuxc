@@ -33,8 +33,8 @@ pub trait Pin: super::IOMUX {
     const DAISY: super::Daisy;
     /// SPI signal
     type Signal: Signal;
-    /// SPI module; `U3` for `SPI3`
-    type Module: super::consts::Unsigned;
+    /// SPI module; `3` for `SPI3`
+    const MODULE: usize;
 }
 
 /// Prepare a SPI pin

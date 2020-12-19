@@ -25,8 +25,8 @@ pub trait Pin: super::IOMUX {
     const DAISY: super::Daisy;
     /// I2C Signal
     type Signal: Signal;
-    /// I2C module; `U2` for `I2C2`
-    type Module: super::consts::Unsigned;
+    /// I2C module; `2` for `I2C2`
+    const MODULE: usize;
 }
 
 /// Prepare an I2C pin

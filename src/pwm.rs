@@ -22,10 +22,10 @@ pub trait Pin: super::IOMUX {
     const ALT: u32;
     /// The output identifier
     type Output: Output;
-    /// The PWM module; `U2` is `PWM2`
-    type Module: super::consts::Unsigned;
-    /// The PWM submodule; `U3` for `PWM2_SM3`
-    type Submodule: super::consts::Unsigned;
+    /// The PWM module; `2` is `PWM2`
+    const MODULE: usize;
+    /// The PWM submodule; `3` for `PWM2_SM3`
+    const SUBMODULE: usize;
 }
 
 /// Prepare a PWM pin

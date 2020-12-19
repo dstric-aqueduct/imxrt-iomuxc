@@ -25,8 +25,8 @@ impl ADC for ADC2 {}
 pub trait Pin<ADCx: ADC>: super::gpio::Pin {
     /// The input pin identifier
     ///
-    /// Starts at `U0`, and increments up.
-    type Input: super::consts::Unsigned;
+    /// Starts at `0`, and increments up.
+    const INPUT: usize;
 }
 
 /// Prepare an ADC pin
