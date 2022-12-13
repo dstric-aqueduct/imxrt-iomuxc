@@ -85,6 +85,8 @@
 #![cfg_attr(docsrs, feature(doc_cfg))]
 
 pub mod adc;
+#[macro_use]
+pub mod can;
 mod config;
 pub mod i2c;
 pub mod pwm;
