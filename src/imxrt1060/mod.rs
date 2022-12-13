@@ -4,6 +4,7 @@
 //! functions are tagged with `imxrt-iomuxc` traits.
 
 mod adc;
+mod can;
 mod flexpwm;
 mod lpi2c;
 mod lpspi;
