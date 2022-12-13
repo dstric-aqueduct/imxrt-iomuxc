@@ -1,8 +1,7 @@
-//! SPI pin implementation
+//! CAN pin implementation
 
-use super::pads::{
-    gpio_ad_b0::*, gpio_ad_b1::*, gpio_b0::*, gpio_b1::*, gpio_emc::*, gpio_sd_b0::*, gpio_sd_b1::*,
-};
+use super::pads::{ad_b0::*, ad_b1::*, b0::*, b1::*, emc::*, sd_b0::*, sd_b1::*};
+
 use crate::{
     can::{Pin, Rx, Tx},
     consts::*,
