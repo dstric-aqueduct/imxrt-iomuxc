@@ -17,7 +17,7 @@ mod private {
 }
 
 /// A Can pin
-pub trait Pin: super::Iomuxc {
+pub trait Pin: super::IOMUX {
     /// Alternate value for this pin
     const ALT: u32;
     /// Daisy register
