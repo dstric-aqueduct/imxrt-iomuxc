@@ -46,7 +46,7 @@ macro_rules! can {
     (module: $module:ty, alt: $alt:expr, pad: $pad:ty, signal: $signal:ty, daisy: $daisy:expr) => {
         impl Pin for $pad {
             const ALT: u32 = $alt;
-            const DAISY: Daisy = $daisy;
+            const DAISY: Option<Daisy> = $daisy;
             type Signal = $signal;
             type Module = $module;
         }
